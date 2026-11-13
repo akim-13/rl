@@ -2,7 +2,7 @@
 type: protocol
 name: README
 description: How this brain works — organisation + the maintenance protocol
-generated: { by: "agent/claude-fable-5-2", at: "2026-11-13T08:08:52Z" }
+generated: { by: "agent/claude-fable-5-2", at: "2026-11-13T08:32:01Z" }
 ---
 
 # brain/ — shared memory for rl (humans + agents)
@@ -26,6 +26,8 @@ to any machine or agent with **zero install** — no MCP server, no database.
 - **`GUARDRAILS.md`** — hard rules, never violated.
 - **`TODO.md`** — shared task list.
 - **`contributors.md`** — who works here (the principal roster).
+- **`coursework.md`** — digest of the coursework spec; the spec itself lives
+  in `coursework/` at the repo root.
 
 <!-- brain:core v4 -->
 ## File format (OKF v0.2)
@@ -194,8 +196,8 @@ deliberately syncing.*
 - **Decisions use stable `D-###` IDs.** Each entry in
   [decisions](decisions.md) gets the next ID; a superseding entry cites the
   superseded entry by its D-ID.
-- **Coursework facts come from the spec, not from memory.** Unit code,
-  deadline, deliverables and marking are recorded in a `coursework.md` fact
-  file once the spec is in the repo, each with the spec file it was read from
-  and the date it was read. Until that file exists, none of those facts are
-  known to this brain (see [STATUS](STATUS.md)).
+- **Coursework facts come from the spec, not from memory.** The spec's full
+  text is [coursework/spec.md](../coursework/spec.md) (original PDF beside
+  it); [coursework](coursework.md) is the digest and says which file it was
+  read from and when. Anything written about what the coursework requires
+  cites one of those, and on any difference the PDF wins.
