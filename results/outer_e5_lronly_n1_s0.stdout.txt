@@ -1,0 +1,28 @@
+round 1/36: eps 1.00->0.95 AUC mean 0.191 (min 0.020, max 0.356) loss 0.3471 max Q at block 0 0.14 (true value at most 26.03) | 204 s
+round 2/36: eps 0.95->0.89 AUC mean 0.154 (min 0.018, max 0.546) loss 0.1840 max Q at block 0 0.40 (true value at most 26.03) | 381 s
+round 3/36: eps 0.89->0.84 AUC mean 0.280 (min 0.094, max 0.551) loss 0.4280 max Q at block 0 0.65 (true value at most 26.03) | 565 s
+round 4/36: eps 0.84->0.79 AUC mean 0.362 (min 0.105, max 0.572) loss 0.2002 max Q at block 0 1.15 (true value at most 26.03) | 766 s
+round 5/36: eps 0.79->0.74 AUC mean 0.168 (min 0.018, max 0.403) loss 0.2245 max Q at block 0 1.89 (true value at most 26.03) | 906 s
+round 6/36: eps 0.74->0.68 AUC mean 0.333 (min 0.020, max 0.653) loss 0.3319 max Q at block 0 2.37 (true value at most 26.03) | 1112 s
+round 7/36: eps 0.68->0.63 AUC mean 0.394 (min 0.137, max 0.653) loss 0.3103 max Q at block 0 2.72 (true value at most 26.03) | 1290 s
+round 8/36: eps 0.63->0.58 AUC mean 0.431 (min 0.117, max 0.731) loss 0.4394 max Q at block 0 3.63 (true value at most 26.03) | 1469 s
+round 9/36: eps 0.58->0.53 AUC mean 0.405 (min 0.205, max 0.664) loss 0.3975 max Q at block 0 4.06 (true value at most 26.03) | 1672 s
+round 10/36: eps 0.53->0.47 AUC mean 0.491 (min 0.221, max 0.667) loss 0.4860 max Q at block 0 4.50 (true value at most 26.03) | 1799 s
+round 11/36: eps 0.47->0.42 AUC mean 0.466 (min 0.018, max 0.696) loss 0.5661 max Q at block 0 5.33 (true value at most 26.03) | 1897 s
+round 12/36: eps 0.42->0.37 AUC mean 0.477 (min 0.185, max 0.672) loss 0.6258 max Q at block 0 5.68 (true value at most 26.03) | 2011 s
+round 13/36: eps 0.37->0.31 AUC mean 0.441 (min 0.019, max 0.675) loss 0.6384 max Q at block 0 6.18 (true value at most 26.03) | 2119 s
+round 14/36: eps 0.31->0.26 AUC mean 0.446 (min 0.188, max 0.692) loss 0.7465 max Q at block 0 7.27 (true value at most 26.03) | 2222 s
+round 15/36: eps 0.26->0.21 AUC mean 0.445 (min 0.100, max 0.671) loss 0.7970 max Q at block 0 7.65 (true value at most 26.03) | 2347 s
+round 16/36: eps 0.21->0.16 AUC mean 0.532 (min 0.215, max 0.852) loss 0.8997 max Q at block 0 8.35 (true value at most 26.03) | 2548 s
+round 17/36: eps 0.16->0.10 AUC mean 0.548 (min 0.281, max 0.730) loss 0.8548 max Q at block 0 8.99 (true value at most 26.03) | 2750 s
+round 18/36: eps 0.10->0.05 AUC mean 0.605 (min 0.171, max 0.736) loss 0.9720 max Q at block 0 9.67 (true value at most 26.03) | 2919 s
+round 19/36: eps 0.05->0.05 AUC mean 0.577 (min 0.272, max 0.720) loss 1.0747 max Q at block 0 10.14 (true value at most 26.03) | 3079 s
+round 20/36: eps 0.05->0.05 AUC mean 0.653 (min 0.373, max 0.741) loss 1.2094 max Q at block 0 11.41 (true value at most 26.03) | 3234 s
+round 21/36: eps 0.05->0.05 AUC mean 0.593 (min 0.379, max 0.716) loss 1.1580 max Q at block 0 11.99 (true value at most 26.03) | 3389 s
+round 22/36: eps 0.05->0.05 AUC mean 0.598 (min 0.320, max 0.751) loss 1.2901 max Q at block 0 12.20 (true value at most 26.03) | 3544 s
+round 23/36: eps 0.05->0.05 AUC mean 0.643 (min 0.478, max 0.733) loss 1.3746 max Q at block 0 13.03 (true value at most 26.03) | 3697 s
+round 24/36: eps 0.05->0.05 AUC mean 0.562 (min 0.223, max 0.739) loss 1.4375 max Q at block 0 13.69 (true value at most 26.03) | 3851 s
+round 25/36: eps 0.05->0.05 AUC mean 0.528 (min 0.227, max 0.752) loss 1.4862 max Q at block 0 13.95 (true value at most 26.03) | 4002 s
+round 26/36: eps 0.05->0.05 AUC mean 0.586 (min 0.264, max 0.801) loss 1.6302 max Q at block 0 15.22 (true value at most 26.03) | 4155 s
+/home/akim/.local/share/pyenv/versions/3.11.5/lib/python3.11/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 3 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

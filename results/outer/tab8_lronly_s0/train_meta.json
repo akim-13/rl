@@ -1,0 +1,128 @@
+{
+  "seed": 0,
+  "outer_config": {
+    "n_envs": 11,
+    "rounds": 36,
+    "hidden": [
+      64,
+      64
+    ],
+    "gamma": 0.99,
+    "lr": 0.0005,
+    "buffer_size": 50000,
+    "batch_size": 64,
+    "learning_starts": 330,
+    "updates_per_step": 11,
+    "target_update_every": 250,
+    "grad_clip": 10.0,
+    "eps_start": 1.0,
+    "eps_end": 0.05,
+    "eps_decay_fraction": 0.5,
+    "n_step": 10,
+    "epsilon_levels": [
+      0.1
+    ],
+    "lr_levels": [
+      3e-05,
+      0.0001,
+      0.001
+    ],
+    "period_levels": null,
+    "dueling": false
+  },
+  "inner_config": {
+    "env_id": "CartPole-v1",
+    "hidden": [
+      64,
+      64
+    ],
+    "gamma": 0.99,
+    "buffer_size": 10000,
+    "batch_size": 64,
+    "learning_starts": 500,
+    "target_update_every": 100,
+    "double_dqn": true,
+    "dueling": false,
+    "grad_clip": 10.0,
+    "lr_init": 0.001,
+    "eps_init": 0.1,
+    "lr_min": 1e-05,
+    "lr_max": 0.01,
+    "eps_min": 0.01,
+    "eps_max": 1.0,
+    "block_steps": 1000,
+    "n_blocks": 30,
+    "eval_episodes": 10,
+    "eval_seed": 10000,
+    "score_max": 500.0,
+    "solved_threshold": 475.0
+  },
+  "tabular": {
+    "grid": {
+      "features": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edges": [
+        [
+          0.3333333333333333,
+          0.6666666666666666
+        ],
+        [
+          0.34560000027219456,
+          0.6728000001360973
+        ],
+        [
+          -0.31973332166671753,
+          0.3245333433151245
+        ],
+        [
+          0.3333333333333333,
+          0.6666666666666666
+        ],
+        [
+          0.24618687578661042,
+          0.5
+        ],
+        [],
+        [
+          0.25215311845143634,
+          0.5043062369028727
+        ],
+        [
+          0.8815232117970785,
+          1.763046423594157
+        ]
+      ]
+    },
+    "n_states": 2187,
+    "step_size": 0.1
+  },
+  "actions": [
+    [
+      3e-05,
+      0.1
+    ],
+    [
+      0.0001,
+      0.1
+    ],
+    [
+      0.001,
+      0.1
+    ]
+  ],
+  "inner_runs": 396,
+  "updates": 11880,
+  "wall_seconds": 4671.143253415999,
+  "versions": {
+    "gymnasium": "1.4.0",
+    "numpy": "2.4.6"
+  }
+}

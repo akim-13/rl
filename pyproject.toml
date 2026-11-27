@@ -1,0 +1,6 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "slow: trains with the full default config (tens of seconds); skip with -m 'not slow'",
+]

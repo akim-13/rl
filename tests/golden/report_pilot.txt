@@ -1,0 +1,10 @@
+Threshold for 'reached' and steps-to-threshold: eval score >= 475
+name           runs     AUC            95% CI  AUC sd   final  reached  median steps   s/run
+--------------------------------------------------------------------------------------------
+pilot_noop       30   0.565    [0.520, 0.609]   0.126   413.0     1.00         14000    93.6
+pilot_lr_gate    30   0.633    [0.587, 0.673]   0.121   416.0     1.00         14500    88.6
+
+Paired AUC difference against pilot_noop (other minus pilot_noop, same seeds):
+  pilot_lr_gate: mean +0.067, 95% CI [+0.037, +0.100], 30 shared seeds
+
+wrote report_plot.png

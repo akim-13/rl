@@ -1,0 +1,78 @@
+{
+  "name": "grid_lr1e-4_eps0.05",
+  "config": {
+    "env_id": "CartPole-v1",
+    "hidden": [
+      64,
+      64
+    ],
+    "gamma": 0.99,
+    "buffer_size": 10000,
+    "batch_size": 64,
+    "learning_starts": 500,
+    "target_update_every": 500,
+    "double_dqn": true,
+    "grad_clip": 10.0,
+    "lr_init": 0.0001,
+    "eps_init": 0.05,
+    "lr_min": 1e-05,
+    "lr_max": 0.01,
+    "eps_min": 0.01,
+    "eps_max": 1.0,
+    "block_steps": 1000,
+    "n_blocks": 30,
+    "eval_episodes": 10,
+    "eval_seed": 10000,
+    "score_max": 500.0,
+    "solved_threshold": 475.0
+  },
+  "controller": "noop",
+  "controller_args": {},
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "run_wall_seconds": {
+    "0": 65.69882495400088,
+    "1": 67.00457110800016,
+    "2": 72.97655379999924,
+    "3": 70.3807170529999,
+    "4": 66.49765411500084,
+    "5": 73.78118408400042,
+    "6": 73.34494477299995,
+    "7": 68.42689479899855,
+    "8": 43.552720372001204,
+    "9": 41.65807430300083
+  },
+  "batch_wall_seconds": 111.277164961999,
+  "workers": 8,
+  "timestamp_utc": "2026-11-13T18:53:42+00:00",
+  "versions": {
+    "python": "3.11.5",
+    "torch": "2.15.0+cpu",
+    "gymnasium": "1.4.0",
+    "numpy": "2.4.6"
+  },
+  "arguments": [
+    "--controller",
+    "noop",
+    "--seeds",
+    "0:10",
+    "--workers",
+    "8",
+    "--name",
+    "grid_lr1e-4_eps0.05",
+    "--set",
+    "lr_init=1e-4",
+    "--set",
+    "eps_init=0.05"
+  ]
+}

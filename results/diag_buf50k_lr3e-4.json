@@ -1,0 +1,78 @@
+{
+  "name": "diag_buf50k_lr3e-4",
+  "config": {
+    "env_id": "CartPole-v1",
+    "hidden": [
+      64,
+      64
+    ],
+    "gamma": 0.99,
+    "buffer_size": 50000,
+    "batch_size": 64,
+    "learning_starts": 500,
+    "target_update_every": 500,
+    "double_dqn": true,
+    "grad_clip": 10.0,
+    "lr_init": 0.0003,
+    "eps_init": 0.1,
+    "lr_min": 1e-05,
+    "lr_max": 0.01,
+    "eps_min": 0.01,
+    "eps_max": 1.0,
+    "block_steps": 1000,
+    "n_blocks": 30,
+    "eval_episodes": 10,
+    "eval_seed": 10000,
+    "score_max": 500.0,
+    "solved_threshold": 475.0
+  },
+  "controller": "noop",
+  "controller_args": {},
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "run_wall_seconds": {
+    "0": 53.625526659998286,
+    "1": 57.703786550000586,
+    "2": 52.72829068699866,
+    "3": 64.14157708600032,
+    "4": 67.88275933299883,
+    "5": 57.64850330500121,
+    "6": 66.95324704099949,
+    "7": 63.14828059199863,
+    "8": 55.93961325300006,
+    "9": 52.94967413199993
+  },
+  "batch_wall_seconds": 110.696547259,
+  "workers": 8,
+  "timestamp_utc": "2026-11-13T19:19:21+00:00",
+  "versions": {
+    "python": "3.11.5",
+    "torch": "2.15.0+cpu",
+    "gymnasium": "1.4.0",
+    "numpy": "2.4.6"
+  },
+  "arguments": [
+    "--controller",
+    "noop",
+    "--seeds",
+    "0:10",
+    "--workers",
+    "8",
+    "--name",
+    "diag_buf50k_lr3e-4",
+    "--set",
+    "buffer_size=50000",
+    "--set",
+    "lr_init=3e-4"
+  ]
+}

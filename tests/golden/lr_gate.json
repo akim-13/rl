@@ -1,0 +1,70 @@
+{
+  "name": "lr_gate",
+  "config": {
+    "env_id": "CartPole-v1",
+    "hidden": [
+      64,
+      64
+    ],
+    "gamma": 0.99,
+    "buffer_size": 10000,
+    "batch_size": 64,
+    "learning_starts": 50,
+    "target_update_every": 100,
+    "double_dqn": true,
+    "grad_clip": 10.0,
+    "lr_init": 0.001,
+    "eps_init": 0.1,
+    "lr_min": 1e-05,
+    "lr_max": 0.01,
+    "eps_min": 0.01,
+    "eps_max": 1.0,
+    "block_steps": 200,
+    "n_blocks": 5,
+    "eval_episodes": 2,
+    "eval_seed": 10000,
+    "score_max": 500.0,
+    "solved_threshold": 475.0
+  },
+  "controller": "lr_gate",
+  "controller_args": {
+    "threshold": 20
+  },
+  "seeds": [
+    0,
+    1
+  ],
+  "run_wall_seconds": {
+    "0": 7.7908383140020305,
+    "1": 7.907478054999956
+  },
+  "batch_wall_seconds": 12.99588361500355,
+  "workers": 2,
+  "timestamp_utc": "2026-11-21T19:40:30+00:00",
+  "versions": {
+    "python": "3.11.5",
+    "torch": "2.15.0+cpu",
+    "gymnasium": "1.4.0",
+    "numpy": "2.4.6"
+  },
+  "arguments": [
+    "--controller",
+    "lr_gate",
+    "--controller-arg",
+    "threshold=20",
+    "--set",
+    "block_steps=200",
+    "--set",
+    "n_blocks=5",
+    "--set",
+    "eval_episodes=2",
+    "--set",
+    "learning_starts=50",
+    "--seeds",
+    "0:2",
+    "--workers",
+    "2",
+    "--name",
+    "lr_gate"
+  ]
+}
